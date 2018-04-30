@@ -1,0 +1,29 @@
+create database consultacep;
+use consultacep;
+
+create table estados (id bigint auto_increment primary key, nome varchar (255), sigla varchar (2))engine=InnoDB default charset=utf8;
+create table cidades (id bigint auto_increment primary key, nome varchar (255), cep_geral_cidade varchar (20))engine=InnoDB default charset=utf8;
+create table bairros (id bigint auto_increment primary key, nome varchar (255))engine=InnoDB default charset=utf8;
+create table logradouros (id bigint auto_increment primary key, nome varchar (255), cep varchar (20))engine=InnoDB default charset=utf8;
+
+alter table estados add constraint nome_uk unique(nome);
+alter table estados add constraint sigla_uk unique(sigla);
+alter table estados modify nome varchar(255) not null;
+alter table estados modify sigla varchar(2) not null;
+
+alter table cidades add column estado_id bigint;
+alter table cidades add constraint estado_id_fk foreign key(estado_id) references estados(id);
+alter table cidades modify estado_id bigint not null;
+alter table cidades modify nome varchar(255) not null;
+alter table cidades modify cep_geral_cidade varchar(20) not null;
+
+alter table bairros add column cidade_id bigint;
+alter table bairros add constraint cidade_id_fk foreign key(cidade_id) references cidades(id);
+alter table bairros modify nome varchar(255) not null;
+alter table bairros modify cidade_id bigint not null;
+
+alter table logradouros add column bairro_id bigint;
+alter table logradouros add constraint bairro_id_fk foreign key(bairro_id) references bairros(id);
+alter table logradouros modify nome varchar(255) not null;
+alter table logradouros modify cep varchar(20) not null;
+alter table logradouros add constraint cep_uk unique(cep);
