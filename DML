@@ -1,0 +1,95 @@
+
+insert into estados (nome, sigla) values
+insert into estados (nome sigla) values ('Bahia', 'BA');
+insert into estados (nome,sigla) values ('São Paulo', 'SP');
+insert into estados (nome,sigla) values ('Maranhão', 'MA');
+insert into estados (nome,sigla) values ('Espirito Santo', 'ES');
+insert into estados (nome,sigla) values ('Rio de Janeiro', 'RJ');
+insert into estados (nome,sigla) values ('Minas Gerais', 'MG');
+insert into estados (nome,sigla) values ('Amazonas', 'AM');
+insert into estados (nome,sigla) values ('Alagoas', 'AL');
+
+insert into cidades (nome, estado_id) values ('Vitória da Conquista', '1');
+insert into cidades (nome, estado_id) values ('Eunapolis', '1');
+insert into cidades (nome, estado_id) values ('Ilheus', '1');
+insert into cidades (nome, estado_id) values ('Barreiras, '1');
+
+insert into cidades (nome, estado_id) values ('Caraguatatuba', '2');
+insert into cidades (nome, estado_id) values ('Itu', '2');
+
+insert into cidades (nome, estado_id) values ('São Luis', '3');
+insert into cidades (nome, estado_id) values ('Maceio', '8');
+insert into cidades (nome, estado_id) values ('Manaus', '7');
+insert into cidades (nome, estado_id) values ('Serra', '4');
+insert into cidades (nome, estado_id) values ('Juiz de Fora', '6');
+insert into cidades (nome, estado_id) values ('Duque de Caxias', '5');
+insert into cidades (nome, estado_id) values ('Guarapari', '4');
+insert into cidades (nome, estado_id) values ('Betim', '6');
+
+insert into bairros (nome, cidade_id) values ('Recreio', '1');
+insert into bairros (nome, cidade_id) values ('Alto Maron', '1');
+insert into bairros (nome, cidade_id) values ('Candeias', '1');
+insert into bairros (nome, cidade_id) values ('Cruzeiro', '1');
+insert into bairros (nome, cidade_id) values ('Lagoa das Flores', '1');
+insert into bairros (nome, cidade_id) values ('Primavera', '1');
+insert into bairros (nome, cidade_id) values ('Centro', '1');
+
+insert into bairros (nome, cidade_id) values ('Serra do Mimo', '4');
+insert into bairros (nome, cidade_id) values ('Centro', '2');
+insert into bairros (nome, cidade_id) values ('Pequi', '2');
+insert into bairros (nome, cidade_id) values ('Malhado', '3');
+insert into bairros (nome, cidade_id) values ('Lot Jardim das Palmeiras', '5');
+insert into bairros (nome, cidade_id) values ('Calhaus', '7');
+insert into bairros (nome, cidade_id) values ('Clima bom', '8');
+insert into bairros (nome, cidade_id) values ('Petropolis', '9');
+insert into bairros (nome, cidade_id) values ('Monte das Oliveiras', '9');
+insert into bairros (nome, cidade_id) values ('Laranjeiras Velha', '10');
+insert into bairros (nome, cidade_id) values ('Barbosa Lage', '11');
+insert into bairros (nome, cidade_id) values ('Jardim Anhangá', '12');
+insert into bairros (nome, cidade_id) values ('Cidade Nova II', '6');
+insert into bairros (nome, cidade_id) values ('Lagoa Funda', '13');
+insert into bairros (nome, cidade_id) values ('Alta Villa', '14');
+
+insert into logradouros (nome, cep, bairro_id) values ('Avenida Luis Eduardo Magalhaes', '47802-502', '8');
+
+insert into logradouros (nome, cep, bairro_id) values ('Avenida Luis Eduardo Magalhaes', '45820-310', '9');
+insert into logradouros (nome, cep, bairro_id) values ('Avenida Luis Eduardo Magalhaes', '45828-000', '10');
+	
+insert into logradouros (nome, cep, bairro_id) values ('Rua Cláudia Botelho', '45009-100', '5');
+insert into logradouros (nome, cep, bairro_id) values ('Rua Cláudia Botelho', '45012-010', '6');
+
+
+insert into logradouros (nome, cep, bairro_id) values ('Alameda Adriano Bernardes', '45000-365', '7');
+insert into logradouros (nome, cep, bairro_id) values ('Alameda Lima Guerra', '45000-390', '7');
+insert into logradouros (nome, cep, bairro_id) values ('Alameda Murilo Andrade', '45000-330', '7');
+insert into logradouros (nome, cep, bairro_id) values ('Avenida Ascendino Melo', '45000-420', '7');
+insert into logradouros (nome, cep, bairro_id) values ('Avenida Centenário', '45000-765', '7');
+insert into logradouros (nome, cep, bairro_id) values ('Avenida Poço Escuro', '45000-971', '7');
+insert into logradouros (nome, cep, bairro_id) values ('Avenida Crescêncio Silveira', '45000-190', '7');
+insert into logradouros (nome, cep, bairro_id) values ('Avenida Crescêncio Silveira', '45000-720', '7');
+
+
+insert into logradouros (nome, cep, bairro_id) values ('Rua Bartolomeu Lins Filho', '57071-290', '14');
+insert into logradouros (nome, cep, bairro_id) values ('Beco São Bartolomeu', '69063-620', '15');
+insert into logradouros (nome, cep, bairro_id) values ('Rua Apóstolo Bartolomeu', '69093-814', '16');
+insert into logradouros (nome, cep, bairro_id) values ('Avenida Dom João Batista', '29162-160', '17');
+insert into logradouros (nome, cep, bairro_id) values ('Avenida Dom João Batista', '29162-160', '17');
+insert into logradouros (nome, cep, bairro_id) values ('Rua A', '36085-572', '18');
+insert into logradouros (nome, cep, bairro_id) values ('Rua A Cinco', '25264-150', '19');
+insert into logradouros (nome, cep, bairro_id) values ('Rua A 1', '13308-345', '20');
+insert into logradouros (nome, cep, bairro_id) values ('Rua A', '29214-190', '21');
+insert into logradouros (nome, cep, bairro_id) values ('Rua A', '32606-750', '22');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
